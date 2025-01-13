@@ -1,2 +1,4 @@
-# Proyecto2_Lenguaje
-Repositorio creado para el segundo proyecto del módulo 'Lenguajes de marca'.
+# Proyecto 2
+
+> Aquí van las instrucciones para visualizar la página y su descripción
+
