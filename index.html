@@ -36,7 +36,7 @@
 
         <nav class="cabecera__navegador">
             <ul class="cabecera__navegador-listas">
-                <li class="cabecera__navegados-list"><a class="cabecera__navegador-enlace"href="#">Packs</a></li>
+                <li class="cabecera__navegados-list"><a class="cabecera__navegador-enlace" href="#">Packs</a></li>
                 <li class="cabecera__navegados-list"><a class="cabecera__navegador-enlace" href="#">Cosmética facial</a></li>
                 <li class="cabecera__navegados-list"><a class="cabecera__navegador-enlace" href="#">Cosmética corporal</a></li>
                 <li class="cabecera__navegados-list"><a class="cabecera__navegador-enlace" href="#">Maquillaje</a></li>
@@ -168,29 +168,29 @@
         <form class="asesorias__formulario"> <!-- He dejado sin rellenar las partes que están relacionadas con javascript-->
             <h3 class="asesorias__formulario-titulo">¡Solicita tu asesoría personalizada!</h3>
 
-            <label class="asesorias__formulario-label" for="nombre">Nombre</label>
+            <label class="asesorias__formulario-label" id="nombre" for="nombre">Nombre</label>
             <input class="asesorias__formulario-input" type="text" placeholder="Nombre completo" required>
 
-            <label class="asesorias__formulario-label" for="email">Correo electrónico</label>
+            <label class="asesorias__formulario-label" id="email" for="email">Correo electrónico</label>
             <input class="asesorias__formulario-input" type="email" placeholder="Correo electrónico" required>
 
 
             <fieldset class="asesorias__formulario-fieldset"> <!-- He elegido esta etiqueta para agrupar por semántica -->
                 <legend class="asesorias__formulario-label">Tipo de piel</legend>
                 
-                <label for="pielNormal">Normal
+                <label id="pielNormal" for="pielNormal">Normal
                     <input type="radio">
                 </label>
 
-                <label for="pielGrasa">Grasa
+                <label id="pielGrasa" for="pielGrasa">Grasa
                     <input type="radio">
                 </label>
 
-                <label for="pielSeca">Seca
+                <label id="pielSeca" for="pielSeca">Seca
                     <input type="radio">
                 </label>
 
-                <label for="pielMixta">Mixta
+                <label id="pielMixta" for="pielMixta">Mixta
                     <input type="radio">
                 </label>
             </fieldset>
@@ -201,7 +201,7 @@
                 </label>
             </fieldset>
 
-            <label class="asesroias__formulario-label" for="presupuesto">¿Cuál es tu presupuesto?</label>
+            <label class="asesroias__formulario-label" id="presupuesto" for="presupuesto">¿Cuál es tu presupuesto?</label>
             <input type="range" min="0" max="250" step="10" value="250">
             <span>€250</span>
 
