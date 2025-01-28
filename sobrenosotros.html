@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Magnolia | Nuestra empresa </title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!--para los iconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Rhodium+Libre&family=Rufina:wght@400;700&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+    <!-- para las fuentes -->
+</head>
+
+<body>
+    <header class="cabecera">
+        <section class="cabecera__seccion">
+            <form class="cabecera__formulario"> <!-- etiqueta no necesario pero decidí mantenerla porque me permitía colocar el input mejor con css-->
+                <input  class="cabecera__input" type="search" placeholder="¿Qué estás buscando?"> 
+            </form>
+            
+            <a class="cabecera__titulo" href="index.html" >
+                <h1 class="cabecera__titulo-texto">MAGNOLIA</h1>
+            </a>
+
+            <article class="cabecera__login"> <!-- etiqueta empleada al ser un contenido independiente-->
+                
+                <ul class="cabecera__login-lista"> <!-- he organizado los enlaces en lista para mejorar la semántica y el orden del código-->
+                    <li><a class="cabecera__login-enlace" href="#">LOGIN</a></li>
+                    <li><a class="cabecera__login-enlace" href="#">CART</a></li>
+                    <li><a class="cabecera__login-enlace" href="#">
+                        <span class="fa-solid fa-toggle-off"></span></a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <nav class="cabecera__navegador">
+            <ul class="cabecera__navegador-listas">
+                <li class="cabecera__navegados-list"><a class="cabecera__navegador-enlace"href="#">Packs</a></li>
+                <li class="cabecera__navegados-list"><a class="cabecera__navegador-enlace" href="#">Cosmética facial</a></li>
+                <li class="cabecera__navegados-list"><a class="cabecera__navegador-enlace" href="#">Cosmética corporal</a></li>
+                <li class="cabecera__navegados-list"><a class="cabecera__navegador-enlace" href="#">Maquillaje</a></li>
+                <li class="cabecera__navegados-list"><a class="cabecera__navegador-enlace" href="#">Asesorías</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="newsletter">
+            <img class="newsletter__imagen" src="assets/Newsletter.jpg" alt="newsletter">
+
+            <article class="newsletter__articulo">
+                <h2 class="newsletter__titulo">SUSCRÍBETE A NUESTRA NEWSLETTER</h2>
+                <form class="newsletter__formulario">
+                    <input class="newsletter__formulario-input" type="text" placeholder="Nombre">
+                    <input class="newsletter__formulario-input" type="email" placeholder="Email">
+                    <button class="newsletter__formulario-button">Suscribirme</button>
+                </form>
+            </article>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__seccion">
+            <article class="footer__descripcion">
+                <h3 class="footer__descripcion-titulo">Magnolia,</h3> <!-- He elegido h3 por el nivel de importancia que considero tiene -->
+                <p class="footer__descripcion-texto">un compromiso con tu piel y la sostenibilidad, por el hoy y el mañana.</p> <!-- He elegido un p porque voy a colocar más de una palabra-->
+            </article>
+    
+            <article class="footer__articulo">
+                <h3 class="footer__articulo-titulo">Contáctanos</h3> <!-- He elegido el nombre de artículo, que no es semántico, para generalizar y por practicidad -->
+                <ul class="footer__articulo-enlaces">
+                    <li class="footer__articulo-lista"><a href="sobrenosotros.html" class="footer__articulo-enlace">Nuestra empresa</a></li>
+                    <li class="footer__articulo-lista"><a href="#" class="footer__articulo-enlace">Trabaja con nosotros</a></li>
+                    <li class="footer__articulo-lista"><a href="contactos.html" class="footer__articulo-enlace">Contacto</a></li>
+                </ul>
+            </article>
+    
+            <article class="footer__articulo">
+                <h3 class="footer__articulo-titulo">¡Síguenos!</h3>
+                <ul class="footer__articulo-enlaces">
+                    <li class="footer__articulo-lista"><a href="https://www.instagram.com/" class="footer__articulo-enlace">Instagram</a></li>
+                    <li class="footer__articulo-lista"><a href="https://www.facebook.com/"  class="footer__articulo-enlace">Facebook</a></li>
+                    <li class="footer__articulo-lista"><a href="https://www.youtube.com/" class="footer__articulo-enlace">Youtube</a></li>
+                </ul> 
+            </article>
+        </section>
+        <p class="footer__copy">© 2025 Magnolia. Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>

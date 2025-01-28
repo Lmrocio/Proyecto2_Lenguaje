@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Magnolia | Inicio </title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!--para los iconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Rhodium+Libre&family=Rufina:wght@400;700&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+    <!-- para las fuentes -->
+</head>
+
+<body>
+    <header class="cabecera">
+        <section class="cabecera__seccion">
+            <form class="cabecera__formulario"> <!-- etiqueta no necesario pero decidí mantenerla porque me permitía colocar el input mejor con css-->
+                <input  class="cabecera__input" type="search" placeholder="¿Qué estás buscando?"> 
+            </form>
+            
+            <a class="cabecera__titulo" href="index.html" >
+                <h1 class="cabecera__titulo-texto">MAGNOLIA</h1>
+            </a>
+
+            <article class="cabecera__login"> <!-- etiqueta empleada al ser un contenido independiente-->
+                
+                <ul class="cabecera__login-lista"> <!-- he organizado los enlaces en lista para mejorar la semántica y el orden del código-->
+                    <li><a class="cabecera__login-enlace" href="#">LOGIN</a></li>
+                    <li><a class="cabecera__login-enlace" href="#">CART</a></li>
+                    <li><a class="cabecera__login-enlace" href="#">
+                        <span class="fa-solid fa-toggle-off"></span></a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <nav class="cabecera__navegador">
+            <ul class="cabecera__navegador-listas">
+                <li class="cabecera__navegados-list"><a class="cabecera__navegador-enlace"href="#">Packs</a></li>
+                <li class="cabecera__navegados-list"><a class="cabecera__navegador-enlace" href="#">Cosmética facial</a></li>
+                <li class="cabecera__navegados-list"><a class="cabecera__navegador-enlace" href="#">Cosmética corporal</a></li>
+                <li class="cabecera__navegados-list"><a class="cabecera__navegador-enlace" href="#">Maquillaje</a></li>
+                <li class="cabecera__navegados-list"><a class="cabecera__navegador-enlace" href="#">Asesorías</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="ofertas"> <!-- la idea era realizar un carousel, he intentado simularlo con animaciones-->
+            <ul class="ofertas__lista">
+                <li>
+                    <a class="oferta__enlace" href="#">
+                        <img class="oferta__imagen" src="assets/Rebajas.png" alt="rebajas"></a>
+                </li>
+                <li>
+                    <a class="oferta__enlace" href="#">
+                        <img class="oferta__imagen" src="assets/Rebajas.png" alt="rebajas"></a>
+                </li>
+                <li>
+                    <a class="oferta__enlace" href="#">
+                        <img class="oferta__imagen" src="assets/Rebajas.png" alt="rebajas"></a>
+                </li>
+            </ul>
+
+            <div class="ofertas__iconos"> <!-- he elegido esta etiqueta porque no considero que sea un contenido independiente, son los iconos de las imágenes-->
+                <span class="fa-solid fa-angle-left"></span>
+                <span class="fa-solid fa-angle-right"></span>
+            </div>
+            
+        </section>
+
+
+    <section class="bestsellers">
+        <h2 class="bestsellers__titulo">BEST SELLERS</h2>
+
+        <section class="bestsellers__container">
+            <article class="bestsellers__productos">
+                <a class="bestsellers__productos-enlace" href="#">
+                    <img class="bestsellers__producto-imagen" src="assets/pexels-polina-kovaleva-8101531.jpg" alt="imagen producto">
+                    <h3 class="bestsellers__producto-nombre">Nombre producto</h3> <!-- He elegido h3 porque considero que es un título-->
+                </a>
+                <span class="bestsellers__producto-precio">00.0€</span> <!-- He elegido esta etiqueta porque no lo considero título (h) ni párrafo-->
+            </article>
+
+            <article class="bestsellers__productos">
+                <a class="bestsellers__productos-enlace"  href="#">
+                    <img class="bestsellers__producto-imagen" src="assets/pexels-polina-kovaleva-8101531.jpg"  alt="imagen producto">
+                    <h3 class="bestsellers__producto-nombre">Nombre producto</h3>
+                </a>
+                <span class="bestsellers__producto-precio">00.0€</span>
+            </article>
+
+            <article class="bestsellers__productos">
+                <a class="bestsellers__productos-enlace" href="#">
+                    <img class="bestsellers__producto-imagen" src="assets/pexels-polina-kovaleva-8101531.jpg"  alt="imagen producto">
+                    <h3 class="bestsellers__producto-nombre">Nombre producto</h3>
+                </a>
+                <span class="bestsellers__producto-precio">00.0€</span>
+            </article>
+
+            <article class="bestsellers__productos">
+                <a class="bestsellers__productos-enlace" href="#">
+                    <img class="bestsellers__producto-imagen" src="assets/pexels-polina-kovaleva-8101531.jpg"  alt="imagen producto">
+                    <h3 class="bestsellers__producto-nombre">Nombre producto</h3>
+                </a>
+                <span class="bestsellers__producto-precio">00.0€</span>
+            </article>
+
+            <article class="bestsellers__productos">
+                <a class="bestsellers__productos-enlace" href="#">
+                    <img class="bestsellers__producto-imagen" src="assets/pexels-polina-kovaleva-8101531.jpg"  alt="imagen producto">
+                    <h3 class="bestsellers__producto-nombre">Nombre producto</h3>
+                </a>
+                <span class="bestsellers__producto-precio">00.0€</span>
+            </article>
+
+            <a class="bestsellers__button" href="productos.html">
+                <span class="fa-solid fa-plus"></span>
+            </a>
+        </section>
+
+    </section>
+
+    <section class="ingredientes">
+        <article class="ingredientes__articulo">
+            <span class="fa-solid fa-otter"></span>
+            <span class="ingredientes__texto">Cruelty-Free</span>
+        </article>
+
+        <article class="ingredientes__articulo">
+            <span class="fa-brands fa-pagelines"></span>
+            <span class="ingredientes__texto">Ingredientes naturales</span>
+        </article>
+
+        <article class="ingredientes__articulo">
+            <span class="fa-solid fa-smog"></span>
+            <span class="ingredientes__texto">Sin tóxicos</span>
+        </article>
+
+        <article class="ingredientes__articulo">
+            <span class="fa-solid fa-recycle"></span>
+            <span class="ingredientes__texto">Sostenible</span>
+        </article>
+    </section>
+
+    <section class="asesorias">
+        <div class="asesorias__descripcion"> <!-- No hay semántica en este contenedor -->
+            <h2 class="asesorias__titulo">ASESORÍAS</h2>
+
+            <article class="asesorias__articulo">
+                <img class="asesorias__imagen" src="assets/pexels-cristian-rojas-10041258.jpg" alt="imagen asesoramiento">
+                <p class="asesorias__texto">orem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper est leo, eu 
+                    accumsan ante fermentum ac. Nam in est diam. Duis semper ac lorem quis commodo. Vestibulum pharetra aliquam 
+                    tellus a iaculis. Integer neque tellus, egestas bibendum leo rutrum, </p>
+            </article> 
+        
+            <article class="asesorias__articulo">
+                <p class="asesorias__texto">orem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper est leo, 
+                    eu accumsan ante fermentum ac. Nam in est diam. Duis semper ac lorem quis commodo. Vestibulum pharetra 
+                    aliquam tellus a iaculis. Integer neque tellus, egestas bibendum leo rutrum, </p>
+                <img class="asesorias__imagen" src="assets/pexels-cristian-rojas-10041258.jpg" alt="imagen asesoramiento">
+                
+            </article> 
+        </div>
+        
+
+        <form class="asesorias__formulario"> <!-- He dejado sin rellenar las partes que están relacionadas con javascript-->
+            <h3 class="asesorias__formulario-titulo">¡Solicita tu asesoría personalizada!</h3>
+
+            <label class="asesorias__formulario-label" for="nombre">Nombre</label>
+            <input class="asesorias__formulario-input" type="text" placeholder="Nombre completo" required>
+
+            <label class="asesorias__formulario-label" for="email">Correo electrónico</label>
+            <input class="asesorias__formulario-input" type="email" placeholder="Correo electrónico" required>
+
+
+            <fieldset class="asesorias__formulario-fieldset"> <!-- He elegido esta etiqueta para agrupar por semántica -->
+                <legend class="asesorias__formulario-label">Tipo de piel</legend>
+                
+                <label for="pielNormal">Normal
+                    <input type="radio">
+                </label>
+
+                <label for="pielGrasa">Grasa
+                    <input type="radio">
+                </label>
+
+                <label for="pielSeca">Seca
+                    <input type="radio">
+                </label>
+
+                <label for="pielMixta">Mixta
+                    <input type="radio">
+                </label>
+            </fieldset>
+
+            <fieldset class="asesorias__formulario-fieldset">
+                <label class="asesroias__formulario-label" >Sí, deseo recibir ofertas y descuentos exclusivos.
+                    <input type="checkbox">
+                </label>
+            </fieldset>
+
+            <label class="asesroias__formulario-label" for="presupuesto">¿Cuál es tu presupuesto?</label>
+            <input type="range" min="0" max="250" step="10" value="250">
+            <span>€250</span>
+
+            <input type="submit" value="Enviar asesoría">
+        </form>
+    </section>
+
+
+    <section class="newsletter">
+        <img class="newsletter__imagen" src="assets/Newsletter.jpg" alt="newsletter">
+
+        <div class="newsletter__articulo"> <!-- No hay semántica en este contenedor -->
+            <h2 class="newsletter__titulo">SUSCRÍBETE A NUESTRA NEWSLETTER</h2>
+            <form class="newsletter__formulario">
+                <input class="newsletter__formulario-input" type="text" placeholder="Nombre">
+                <input class="newsletter__formulario-input" type="email" placeholder="Email">
+                <button class="newsletter__formulario-button">Suscribirme</button>
+            </form>
+        </div>
+
+    </section>
+    </main>
+
+
+<footer class="footer">
+    <section class="footer__seccion">
+        <article class="footer__descripcion">
+            <h3 class="footer__descripcion-titulo">Magnolia,</h3> <!-- He elegido h3 por el nivel de importancia que considero tiene -->
+            <p class="footer__descripcion-texto">un compromiso con tu piel y la sostenibilidad, por el hoy y el mañana.</p> <!-- He elegido un p porque voy a colocar más de una palabra-->
+        </article>
+
+        <article class="footer__articulo">
+            <h3 class="footer__articulo-titulo">Contáctanos</h3> <!-- He elegido el nombre de artículo, que no es semántico, para generalizar y por practicidad -->
+            <ul class="footer__articulo-enlaces">
+                <li class="footer__articulo-lista"><a href="sobrenosotros.html" class="footer__articulo-enlace">Nuestra empresa</a></li>
+                <li class="footer__articulo-lista"><a href="#" class="footer__articulo-enlace">Trabaja con nosotros</a></li>
+                <li class="footer__articulo-lista"><a href="contactos.html" class="footer__articulo-enlace">Contacto</a></li>
+            </ul>
+        </article>
+
+        <article class="footer__articulo">
+            <h3 class="footer__articulo-titulo">¡Síguenos!</h3>
+            <ul class="footer__articulo-enlaces">
+                <li class="footer__articulo-lista"><a href="https://www.instagram.com/" class="footer__articulo-enlace">Instagram</a></li>
+                <li class="footer__articulo-lista"><a href="https://www.facebook.com/"  class="footer__articulo-enlace">Facebook</a></li>
+                <li class="footer__articulo-lista"><a href="https://www.youtube.com/" class="footer__articulo-enlace">Youtube</a></li>
+            </ul> 
+        </article>
+    </section>
+    <p class="footer__copy">© 2025 Magnolia. Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
