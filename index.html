@@ -8,27 +8,29 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!--para los iconos -->
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Rhodium+Libre&family=Rufina:wght@400;700&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
     <!-- para las fuentes -->
+
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
     <header class="cabecera">
-
         <section class="cabecera__seccion">
-            <form class="cabecera__formulario"> <!-- etiqueta no necesario pero decidí mantenerla porque me permitía colocar el input mejor con css-->
-                <input  class="cabecera__input" type="search" placeholder="¿Qué estás buscando?"> 
+            <form class="cabecera__formulario" method="GET" action="#"> <!-- etiqueta no necesario pero decidí mantenerla porque me permitía colocar el input mejor con css-->
+                <input class="cabecera__input" type="search" name="query" placeholder="¿Qué estás buscando?">
             </form>
-            
+            <div class="cabecera__seccion-mensaje"></div> <!-- he elegido esta etiqueta porque no tiene valor semántico lo que quería añadir-->
+
             <a class="cabecera__titulo" href="index.html" >
                 <h1 class="cabecera__titulo-texto">MAGNOLIA</h1>
             </a>
 
             <article class="cabecera__login"> <!-- etiqueta empleada al ser un contenido independiente-->
-                
                 <ul class="cabecera__login-lista"> <!-- he organizado los enlaces en lista para mejorar la semántica y el orden del código-->
                     <li><a class="cabecera__login-enlace" href="#">LOGIN</a></li>
                     <li><a class="cabecera__login-enlace" href="#">CART</a></li>
-                    <li><a class="cabecera__login-enlace" href="#">
-                        <span class="fa-solid fa-toggle-off"></span></a>
+                    <li><button id="modoNocturnoBtn" class="cabecera__login-enlace"> <!-- botón para cambiar al modo noche -->
+                        <span class="fa-solid fa-toggle-off"></span>
+                    </button>
                     </li>
                 </ul>
             </article>
@@ -49,15 +51,15 @@
     <main>
         <section class="ofertas"> <!-- la idea era realizar un carousel, he intentado simularlo con animaciones-->
             <ul class="ofertas__lista">
-                <li>
+                <li class="ofertas__lista-ofertas">
                     <a class="oferta__enlace" href="#">
                         <img class="oferta__imagen" src="assets/Rebajas.png" alt="rebajas"></a>
                 </li>
-                <li>
+                <li class="ofertas__lista-ofertas">
                     <a class="oferta__enlace" href="#">
                         <img class="oferta__imagen" src="assets/Rebajas.png" alt="rebajas"></a>
                 </li>
-                <li>
+                <li class="ofertas__lista-ofertas">
                     <a class="oferta__enlace" href="#">
                         <img class="oferta__imagen" src="assets/Rebajas.png" alt="rebajas"></a>
                 </li>
@@ -80,7 +82,10 @@
                     <img class="bestsellers__producto-imagen" src="assets/pexels-polina-kovaleva-8101531.jpg" alt="imagen producto">
                     <h3 class="bestsellers__producto-nombre">Nombre producto</h3> <!-- He elegido h3 porque considero que es un título-->
                 </a>
-                <span class="bestsellers__producto-precio">00.0€</span> <!-- He elegido esta etiqueta porque no lo considero título (h) ni párrafo-->
+                <span class="bestsellers__producto-precio">00.0€</span><!-- He elegido esta etiqueta porque no lo considero título (h) ni párrafo-->
+                <button class="bestsellers__producto-favorito">
+                    <span class="fa-solid fa-heart"></span>
+                </button>
             </article>
 
             <article class="bestsellers__productos">
@@ -89,6 +94,9 @@
                     <h3 class="bestsellers__producto-nombre">Nombre producto</h3>
                 </a>
                 <span class="bestsellers__producto-precio">00.0€</span>
+                <button class="bestsellers__producto-favorito">
+                    <span class="fa-solid fa-heart"></span>
+                </button>
             </article>
 
             <article class="bestsellers__productos">
@@ -97,6 +105,9 @@
                     <h3 class="bestsellers__producto-nombre">Nombre producto</h3>
                 </a>
                 <span class="bestsellers__producto-precio">00.0€</span>
+                <button class="bestsellers__producto-favorito">
+                    <span class="fa-solid fa-heart"></span>
+                </button>
             </article>
 
             <article class="bestsellers__productos">
@@ -105,6 +116,9 @@
                     <h3 class="bestsellers__producto-nombre">Nombre producto</h3>
                 </a>
                 <span class="bestsellers__producto-precio">00.0€</span>
+                <button class="bestsellers__producto-favorito">
+                    <span class="fa-solid fa-heart"></span>
+                </button>
             </article>
 
             <article class="bestsellers__productos">
@@ -113,6 +127,9 @@
                     <h3 class="bestsellers__producto-nombre">Nombre producto</h3>
                 </a>
                 <span class="bestsellers__producto-precio">00.0€</span>
+                <button class="bestsellers__producto-favorito">
+                    <span class="fa-solid fa-heart"></span>
+                </button>
             </article>
 
             <a class="bestsellers__button" href="productos.html">
