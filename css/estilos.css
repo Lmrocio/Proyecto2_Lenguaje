@@ -576,25 +576,30 @@ button{
 }
 
 .asesorias__formulario{
-    width: 50%;
+    width: 38%;
+    height: 85%;
 
     display: flex;
+    align-self: center;
     flex-wrap: wrap;
 
-    padding: 1rem;
+    padding: 2rem;
+    gap: 1rem;
+
+    background-color: var(--color-secundario);
+    border-radius: 2rem;
 }
 
 .asesorias__formulario-titulo{
-    width: 100%;
 
     margin: 1rem 0 3rem 0;
 
     font-family: var(--font-texto), sans-serif;
     font-size: 1.6rem;
     font-weight: normal;
-    color: var(--color-secundario);
+    color: var(--color-acento);
 
-    border-bottom: 0.5rem dotted var(--color-acento);
+    border-bottom: 0.5rem dotted var(--color-primario);
 }
 
 .asesorias__formulario-label{
@@ -654,6 +659,8 @@ button{
 
     border: none;
 }
+
+
 /******************************************************************************
                             NEWSLETTER
 ******************************************************************************/
