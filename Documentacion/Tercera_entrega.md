@@ -8,7 +8,7 @@ Este documento describe las funcionalidades interactivas implementadas en el pro
 
 ### Funcionalidad esperada
 
-Permite cambiar la imagen principal de un producto cuando se hace clic sobre una miniatura. Proporciona una experiencia de usuario interactiva y moderna.
+Permite cambiar la imagen principal de un producto cuando se hace clic sobre una miniatura. Proporciona una experiencia de usuario interactiva y moderna. Está ubicada en los productos que aparecen en la sección de bestsellers de la página principal.
 
 ```js
 document.addEventListener("DOMContentLoaded", () => {
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 ### Funcionalidad esperada
 
-Validar entradas del usuario y mostrar mensajes inmediatos de error o éxito. Mejora la experiencia sin necesidad de enviar el formulario a un servidor.
+Validar entradas del usuario y mostrar mensajes inmediatos de error o éxito. Mejora la experiencia sin necesidad de enviar el formulario a un servidor. Está ubicada en la página principal, concretamente en la sección de asesorías personales.
 
 ```js
 document.addEventListener("DOMContentLoaded", () => {
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 ### Funcionalidad esperada
 
-Brindar al usuario control para visualizar únicamente los productos que le interesan según filtros activos.
+Brindar al usuario control para visualizar únicamente los productos que le interesan según filtros activos. Está ubicada en la página de productos, a la que se accede al pulsar el icono '+' de la sección bestsellers.
 
 ```js
 document.querySelectorAll('.tienda__filtro input').forEach(filtro => {
@@ -135,7 +135,7 @@ document.querySelectorAll('.tienda__filtro input').forEach(filtro => {
 
 ### Funcionalidad esperada
 
-Simula el proceso de añadir productos al carrito de forma interactiva, sin necesidad de backend.
+Simula el proceso de añadir productos al carrito de forma interactiva, sin necesidad de backend. Al pulsar en 'CART' ubicado en la cabecera se despliega el carrito de compra. Está ubicada en la página de prodcutos a la que se accede por el icono '+' de la sección de bestsellers.
 
 ```js
 document.addEventListener("DOMContentLoaded", () => {
