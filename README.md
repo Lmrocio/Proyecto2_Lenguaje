@@ -43,3 +43,7 @@ https://validator.w3.org/ y https://jigsaw.w3.org/css-validator/. Adjunto captur
 [Ir a la segunda entrega](Documentacion/Segunda_entrega.md)
 
 ## TERCERA ENTREGA
+
+[Ir a la tercera entrega](Documentacion/Tercera_entrega.md)
+
+
