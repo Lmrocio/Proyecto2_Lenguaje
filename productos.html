@@ -8,6 +8,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!--para los iconos -->
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Rhodium+Libre&family=Rufina:wght@400;700&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
     <!-- para las fuentes -->
+    <script src="js/script.js" defer></script>
+
 </head>
 
 <body>
@@ -25,7 +27,15 @@
                 
                 <ul class="cabecera__login-lista"> <!-- he organizado los enlaces en lista para mejorar la semántica y el orden del código-->
                     <li><a class="cabecera__login-enlace" href="#">LOGIN</a></li>
-                    <li><a class="cabecera__login-enlace" href="#">CART</a></li>
+                    <li>
+                        <button class="cabecera__login-enlace cabecera__login-enlace--carrito" id="carrito-toggle">CART 🛒</button>
+                        <div class="carrito">
+                            <h2 class="carrito__titulo">Tu carrito</h2>
+                            <div class="carrito__lista"></div>
+                            <p class="carrito__vacio" style="display: none;">El carrito está vacío.</p>
+                        </div>
+
+                    </li>
                     <li><a class="cabecera__login-enlace" href="#">
                         <span class="fa-solid fa-toggle-off"></span></a>
                     </li>
@@ -67,9 +77,62 @@
             </div>
             
         </section>
-    </main>
 
-    <footer class="footer">
+        <div class="tienda">
+            <h2 class="tienda__titulo">Nuestros Productos</h2>
+            <div class="tienda__contenido">
+                <aside class="tienda__filtros">
+                    <h3 class="tienda__filtros-titulo">Filtrar por</h3>
+                    <form class="tienda__formulario-filtros">
+                        <label class="tienda__filtro">
+                            <input type="checkbox" name="categoria" value="facial"> Cuidado facial
+                        </label>
+                        <label class="tienda__filtro">
+                            <input type="checkbox" name="categoria" value="corporal"> Cuidado corporal
+                        </label>
+                        <label class="tienda__filtro">
+                            <input type="checkbox" name="categoria" value="cabello"> Cabello
+                        </label>
+                    </form>
+                </aside>
+
+                <section class="tienda__productos">
+                    <article class="producto" data-categoria="facial">
+                        <img src="assets/pexels-helloimfrecelynne-10427812.jpg" alt="Sérum facial" class="producto__imagen">
+                        <h3 class="producto__nombre">Sérum facial Magnolia</h3>
+                        <p class="producto__descripcion">Hidratación profunda para tu piel.</p>
+                        <p class="producto__precio">18.50€</p>
+                        <button class="producto__boton" data-nombre="Sérum facial Magnolia" data-precio="18.50">✚ Añadir al carrito</button>
+                    </article>
+
+                    <article class="producto" data-categoria="corporal">
+                        <img src="assets/pexels-selfcarewithdenisse-31517861.jpg" alt="Manteca corporal" class="producto__imagen">
+                        <h3 class="producto__nombre">Manteca corporal</h3>
+                        <p class="producto__descripcion">Nutre y suaviza la piel seca.</p>
+                        <p class="producto__precio">12.90€</p>
+                        <button class="producto__boton" data-nombre="Manteca corporal" data-precio="12.90">✚ Añadir al carrito</button>
+                    </article>
+
+                    <article class="producto" data-categoria="cabello">
+                        <img src="assets/pexels-cottonbro-3737603.jpg" alt="Champú sólido" class="producto__imagen">
+                        <h3 class="producto__nombre">Champú sólido</h3>
+                        <p class="producto__descripcion">Fortalece el cabello desde la raíz.</p>
+                        <p class="producto__precio">9.95€</p>
+                        <button class="producto__boton" data-nombre="Champú sólido" data-precio="9.95">✚ Añadir al carrito</button>
+                    </article>
+
+                    <article class="producto" data-categoria="facial">
+                        <img src="assets/pexels-the-bio-brand-17631772-6442513.jpg" alt="Crema de día" class="producto__imagen">
+                        <h3 class="producto__nombre">Crema de día</h3>
+                        <p class="producto__descripcion">Con protección solar natural.</p>
+                        <p class="producto__precio">15.60€</p>
+                        <button class="producto__boton" data-nombre="Crema de día" data-precio="15.60">✚ Añadir al carrito</button>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </main>
+        <footer class="footer">
         <section class="footer__seccion">
             <article class="footer__descripcion">
                 <h3 class="footer__descripcion-titulo">Magnolia,</h3> <!-- He elegido h3 por el nivel de importancia que considero tiene -->
@@ -96,6 +159,7 @@
         </section>
         <p class="footer__copy">© 2025 Magnolia. Todos los derechos reservados</p>
     </footer>
+
 </body>
 
 </html>

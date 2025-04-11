@@ -79,9 +79,16 @@
         <section class="bestsellers__container">
             <article class="bestsellers__productos">
                 <a class="bestsellers__productos-enlace" href="#">
-                    <img class="bestsellers__producto-imagen" src="assets/pexels-polina-kovaleva-8101531.jpg" alt="imagen producto">
+                    <img class="bestsellers__producto-imagen" src="assets/pexels-cottonbro-3737603.jpg" alt="imagen producto">
                     <h3 class="bestsellers__producto-nombre">Nombre producto</h3> <!-- He elegido h3 porque considero que es un título-->
                 </a>
+
+                <div class="bestsellers__miniaturas">
+                    <img class="miniatura" src="assets/pexels-meruyert-gonullu-7500419.jpg" alt="mini 1">
+                    <img class="miniatura" src="assets/pexels-selfcarewithdenisse-31517861.jpg" alt="mini 2">
+                    <img class="miniatura" src="assets/pexels-selfcarewithdenisse-31517862.jpg" alt="mini 3">
+                </div>
+
                 <span class="bestsellers__producto-precio">00.0€</span><!-- He elegido esta etiqueta porque no lo considero título (h) ni párrafo-->
                 <button class="bestsellers__producto-favorito">
                     <span class="fa-solid fa-heart"></span>
@@ -90,9 +97,34 @@
 
             <article class="bestsellers__productos">
                 <a class="bestsellers__productos-enlace"  href="#">
-                    <img class="bestsellers__producto-imagen" src="assets/pexels-polina-kovaleva-8101531.jpg"  alt="imagen producto">
+                    <img class="bestsellers__producto-imagen" src="assets/pexels-harper-sunday-11757211.jpg"  alt="imagen producto">
                     <h3 class="bestsellers__producto-nombre">Nombre producto</h3>
                 </a>
+
+                <div class="bestsellers__miniaturas">
+                    <img class="miniatura" src="assets/pexels-polina-kovaleva-8101531.jpg" alt="mini 1">
+                    <img class="miniatura" src="assets/pexels-helloimfrecelynne-10427812.jpg" alt="mini 2">
+                    <img class="miniatura" src="assets/pexels-paula-francis-2878334-4408447.jpg" alt="mini 3">
+                </div>
+
+                <span class="bestsellers__producto-precio">00.0€</span>
+                <button class="bestsellers__producto-favorito">
+                    <span class="fa-solid fa-heart"></span>
+                </button>
+            </article>
+
+            <article class="bestsellers__productos">
+                <a class="bestsellers__productos-enlace" href="#">
+                    <img class="bestsellers__producto-imagen" src="assets/pexels-the-bio-brand-17631772-6442513.jpg"  alt="imagen producto">
+                    <h3 class="bestsellers__producto-nombre">Nombre producto</h3>
+                </a>
+
+                <div class="bestsellers__miniaturas">
+                    <img class="miniatura" src="assets/pexels-polina-kovaleva-8101531.jpg" alt="mini 1">
+                    <img class="miniatura" src="assets/pexels-polina-kovaleva-8101531.jpg" alt="mini 2">
+                    <img class="miniatura" src="assets/pexels-polina-kovaleva-8101531.jpg" alt="mini 3">
+                </div>
+
                 <span class="bestsellers__producto-precio">00.0€</span>
                 <button class="bestsellers__producto-favorito">
                     <span class="fa-solid fa-heart"></span>
@@ -104,6 +136,13 @@
                     <img class="bestsellers__producto-imagen" src="assets/pexels-polina-kovaleva-8101531.jpg"  alt="imagen producto">
                     <h3 class="bestsellers__producto-nombre">Nombre producto</h3>
                 </a>
+
+                <div class="bestsellers__miniaturas">
+                    <img class="miniatura" src="assets/pexels-polina-kovaleva-8101531.jpg" alt="mini 1">
+                    <img class="miniatura" src="assets/pexels-polina-kovaleva-8101531.jpg" alt="mini 2">
+                    <img class="miniatura" src="assets/pexels-polina-kovaleva-8101531.jpg" alt="mini 3">
+                </div>
+
                 <span class="bestsellers__producto-precio">00.0€</span>
                 <button class="bestsellers__producto-favorito">
                     <span class="fa-solid fa-heart"></span>
@@ -115,17 +154,13 @@
                     <img class="bestsellers__producto-imagen" src="assets/pexels-polina-kovaleva-8101531.jpg"  alt="imagen producto">
                     <h3 class="bestsellers__producto-nombre">Nombre producto</h3>
                 </a>
-                <span class="bestsellers__producto-precio">00.0€</span>
-                <button class="bestsellers__producto-favorito">
-                    <span class="fa-solid fa-heart"></span>
-                </button>
-            </article>
 
-            <article class="bestsellers__productos">
-                <a class="bestsellers__productos-enlace" href="#">
-                    <img class="bestsellers__producto-imagen" src="assets/pexels-polina-kovaleva-8101531.jpg"  alt="imagen producto">
-                    <h3 class="bestsellers__producto-nombre">Nombre producto</h3>
-                </a>
+                <div class="bestsellers__miniaturas">
+                    <img class="miniatura" src="assets/pexels-cristian-rojas-10041258.jpg" alt="mini 1">
+                    <img class="miniatura" src="assets/pexels-polina-kovaleva-8101531.jpg" alt="mini 2">
+                    <img class="miniatura" src="assets/pexels-polina-kovaleva-8101531.jpg" alt="mini 3">
+                </div>
+
                 <span class="bestsellers__producto-precio">00.0€</span>
                 <button class="bestsellers__producto-favorito">
                     <span class="fa-solid fa-heart"></span>
@@ -161,73 +196,77 @@
         </article>
     </section>
 
-    <section class="asesorias">
-        <div class="asesorias__descripcion"> <!-- No hay semántica en este contenedor -->
-            <h2 class="asesorias__titulo">ASESORÍAS</h2>
+        <section class="asesorias">
+            <div class="asesorias__descripcion">
+                <h2 class="asesorias__titulo">ASESORÍAS</h2>
 
-            <article class="asesorias__articulo">
-                <img class="asesorias__imagen" src="assets/pexels-cristian-rojas-10041258.jpg" alt="imagen asesoramiento">
-                <p class="asesorias__texto">orem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper est leo, eu 
-                    accumsan ante fermentum ac. Nam in est diam. Duis semper ac lorem quis commodo. Vestibulum pharetra aliquam 
-                    tellus a iaculis. Integer neque tellus, egestas bibendum leo rutrum, </p>
-            </article> 
-        
-            <article class="asesorias__articulo">
-                <p class="asesorias__texto">orem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper est leo, 
-                    eu accumsan ante fermentum ac. Nam in est diam. Duis semper ac lorem quis commodo. Vestibulum pharetra 
-                    aliquam tellus a iaculis. Integer neque tellus, egestas bibendum leo rutrum, </p>
-                <img class="asesorias__imagen" src="assets/pexels-cristian-rojas-10041258.jpg" alt="imagen asesoramiento">
-                
-            </article> 
-        </div>
-        
+                <article class="asesorias__articulo">
+                    <img class="asesorias__imagen" src="assets/pexels-cristian-rojas-10041258.jpg" alt="imagen asesoramiento">
+                    <p class="asesorias__texto">
+                        orem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper est leo, eu accumsan ante fermentum ac.
+                        Nam in est diam. Duis semper ac lorem quis commodo. Vestibulum pharetra aliquam tellus a iaculis. Integer
+                        neque tellus, egestas bibendum leo rutrum,
+                    </p>
+                </article>
 
-        <form class="asesorias__formulario"> <!-- He dejado sin rellenar las partes que están relacionadas con javascript-->
-            <h3 class="asesorias__formulario-titulo">¡Solicita tu asesoría personalizada!</h3>
+                <article class="asesorias__articulo">
+                    <p class="asesorias__texto">
+                        orem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper est leo, eu accumsan ante fermentum ac.
+                        Nam in est diam. Duis semper ac lorem quis commodo. Vestibulum pharetra aliquam tellus a iaculis. Integer
+                        neque tellus, egestas bibendum leo rutrum,
+                    </p>
+                    <img class="asesorias__imagen" src="assets/pexels-cristian-rojas-10041258.jpg" alt="imagen asesoramiento">
+                </article>
+            </div>
 
-            <label class="asesorias__formulario-label" id="nombre" for="nombre">Nombre</label>
-            <input class="asesorias__formulario-input" type="text" placeholder="Nombre completo" required>
+            <form class="asesorias__formulario">
+                <h3 class="asesorias__formulario-titulo">¡Solicita tu asesoría personalizada!</h3>
 
-            <label class="asesorias__formulario-label" id="email" for="email">Correo electrónico</label>
-            <input class="asesorias__formulario-input" type="email" placeholder="Correo electrónico" required>
+                <label class="asesorias__formulario-label" for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" class="asesorias__formulario-input" type="text" placeholder="Nombre completo" required>
 
+                <label class="asesorias__formulario-label" for="email">Correo electrónico</label>
+                <input id="email" name="email" class="asesorias__formulario-input" type="email" placeholder="Correo electrónico" required>
 
-            <fieldset class="asesorias__formulario-fieldset"> <!-- He elegido esta etiqueta para agrupar por semántica -->
-                <legend class="asesorias__formulario-label">Tipo de piel</legend>
-                
-                <label id="pielNormal" for="pielNormal">Normal
-                    <input type="radio">
-                </label>
+                <fieldset class="asesorias__formulario-fieldset">
+                    <legend class="asesorias__formulario-label">Tipo de piel</legend>
 
-                <label id="pielGrasa" for="pielGrasa">Grasa
-                    <input type="radio">
-                </label>
+                    <label for="pielNormal">Normal
+                        <input id="pielNormal" name="tipoPiel" type="radio" value="Normal">
+                    </label>
 
-                <label id="pielSeca" for="pielSeca">Seca
-                    <input type="radio">
-                </label>
+                    <label for="pielGrasa">Grasa
+                        <input id="pielGrasa" name="tipoPiel" type="radio" value="Grasa">
+                    </label>
 
-                <label id="pielMixta" for="pielMixta">Mixta
-                    <input type="radio">
-                </label>
-            </fieldset>
+                    <label for="pielSeca">Seca
+                        <input id="pielSeca" name="tipoPiel" type="radio" value="Seca">
+                    </label>
 
-            <fieldset class="asesorias__formulario-fieldset">
-                <label class="asesroias__formulario-label" >Sí, deseo recibir ofertas y descuentos exclusivos.
-                    <input type="checkbox">
-                </label>
-            </fieldset>
+                    <label for="pielMixta">Mixta
+                        <input id="pielMixta" name="tipoPiel" type="radio" value="Mixta">
+                    </label>
+                </fieldset>
 
-            <label class="asesroias__formulario-label" id="presupuesto" for="presupuesto">¿Cuál es tu presupuesto?</label>
-            <input type="range" min="0" max="250" step="10" value="250">
-            <span>€250</span>
+                <fieldset class="asesorias__formulario-fieldset">
+                    <label for="ofertas">
+                        Sí, deseo recibir ofertas y descuentos exclusivos.
+                        <input id="ofertas" name="ofertas" type="checkbox">
+                    </label>
+                </fieldset>
 
-            <input type="submit" value="Enviar asesoría">
-        </form>
-    </section>
+                <label class="asesorias__formulario-label" for="presupuesto">¿Cuál es tu presupuesto?</label>
+                <input id="presupuesto" name="presupuesto" type="range" min="0" max="250" step="10" value="250">
+                <span>€250</span>
 
 
-    <section class="newsletter">
+                <div id="asesorias__mensaje"></div>
+
+                <input class="asesorias__formulario-button" type="submit" value="Enviar asesoría">
+            </form>
+        </section>
+
+        <section class="newsletter">
         <img class="newsletter__imagen" src="assets/Newsletter.jpg" alt="newsletter">
 
         <div class="newsletter__articulo"> <!-- No hay semántica en este contenedor -->
