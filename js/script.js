@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function mostrarMensaje() {
 
+
         const mensaje = document.createElement('div');
         mensaje.classList.add('mensaje');
 
