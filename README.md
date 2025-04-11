@@ -40,6 +40,6 @@ https://validator.w3.org/ y https://jigsaw.w3.org/css-validator/. Adjunto captur
 
 ## SEGUNDA ENTREGA
 
-[Documento](https://github.com/Lmrocio/Proyecto2_Lenguaje/Documentacion/Segunda_entrega.md)
+[Ir a la segunda entrega](Documentación/Segunda_entrega.md)
 
 ## TERCERA ENTREGA
